@@ -6,8 +6,12 @@
     </div>
     <div class="frame">
       <button class="text-wrapper">Inicio</button>
+      <button class="text-wrapper">Nuestra Marca</button>
       <button class="text-wrapper">Servicios</button>
-      <button class="text-wrapper">Nosotros</button>
+      <button class="text-wrapper">Tienda</button>
+      <button class="text-wrapper" id="carrito">
+        <i class="fas fa-shopping-cart"></i>
+      </button>
       <button class="text-wrapper" id="contacto">Contacto</button>
     </div>
   </div>
@@ -30,12 +34,13 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
 
+
 .navigation-bar {
   align-items: center;
   box-shadow: 0px 4px 4px #00000040;
-  display:inline-flex;
-  gap: 15vw;
-  padding-left: 5vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vw;
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -104,6 +109,27 @@ export default {
   background-color: #F2E205;
   color: #1e1e1e;
 }
+
+#carrito { 
+  color: #A3A646;
+  border: 2px solid #A3A646;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  display: inline-flex; 
+  align-items: center;  
+}
+
+#carrito:hover, #carrito:focus {
+  background-color: #A3A646;
+  color: #1e1e1e;
+  transform: scale(1.05); 
+}
+
+
 
 /* Media queries para ajustar el tamaño de la fuente y otros estilos en diferentes tamaños de pantalla */
 @media (max-width: 1200px) {
