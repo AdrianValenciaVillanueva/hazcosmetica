@@ -34,7 +34,9 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
 
-
+*{
+  box-sizing: border-box;
+}
 .navigation-bar {
   align-items: center;
   box-shadow: 0px 4px 4px #00000040;
@@ -55,23 +57,21 @@ export default {
 
 .navigation-bar .image {
   height: 3vw;
-  position: relative;
   width: auto;
 }
 
 .navigation-bar .logo p {
-  
   font-family: 'Jomolhari', serif;
   font-size: 1.5vw;
   color: #fff;
-  
 }
 
 .navigation-bar .frame {
-  align-items:flex-start;
+  align-items:center;
   display: flex;
   flex-direction:row;
-  gap: 6vw;
+  gap: 2vw;
+  
 }
 
 .navigation-bar .text-wrapper {
@@ -96,17 +96,18 @@ export default {
 }
 
 #contacto {
-  color: #F2E205;
-  border: #F2E205, 2px, solid;
+  color: #000000;
   padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background: #D9B504;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
 }
 #contacto:hover, #contacto:focus {
-  background-color: #F2E205;
+  background-color:#A3A646;
   color: #1e1e1e;
 }
 
