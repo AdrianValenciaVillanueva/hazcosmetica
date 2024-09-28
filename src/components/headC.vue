@@ -1,24 +1,21 @@
 <template>
   <div class="frame">
+
     <header class="header">
-      <div class="div">
-        <p class="p">
+
+      <div class="main-text">
+        <p>
           Producción de artículos de belleza personalizados bajo tu propia marca.
         </p>
         <button class="button-instance">Nuestro catálogo</button>
       </div>
-      <div>
-        <img class="imgH" src="../assets/logo.png" alt="" />
+
+      <div class="carousel">
+        <img class="imgH" src="../assets/image 4.png" alt="" />
       </div>
+
     </header>
 
-    <div class="hidden-text">
-      <img class="imgH" src="../assets/logo.png" alt="" />
-      <p class="p">
-        Producción de artículos de belleza personalizados bajo tu propia marca.
-      </p>
-      <button class="button-instance">Nuestro catálogo</button>
-    </div>
   </div>
 </template>
 
@@ -35,46 +32,40 @@ export default {
 
 .frame {
   align-items: center;
+  justify-content: space-around;
   display: flex;
   flex-direction: row;
-  gap: 60px;
-  position: relative;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
   padding: 2vw 5vw;
 }
 
 .header {
-  align-items: flex-start;
-  background-color: transparent;
+  align-items: center;
   display: flex;
-  flex: 1;
-  padding: 50px 0;
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 0rem;
+  padding-left: 6rem;
 }
 
-.div {
-  align-items: flex-start;
+.main-text {
   display: flex;
   flex-direction: column;
-  gap: 35px;
-  position: relative;
-  flex: 1;
+  gap: 60px;
+  width: 50%;
+  height: auto;
 }
 
-.p {
+.main-text p {
   color: rgb(0, 0, 0);
   text-align: left; /* Alineación a la izquierda */
   font-family: 'Inter', sans-serif; /* Aplicando la fuente Inter */
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700; /* Manteniendo el texto en negritas */
-  letter-spacing: 0;
-  line-height: 28px;
-  position: relative;
-  max-width: 500px; /* Limitar el ancho del texto */
   margin: 0; /* Remover márgenes adicionales */
+  padding-top: 3.5rem;
 }
 
 .button-instance {
@@ -84,62 +75,23 @@ export default {
   border-radius: 14px;
   width: 236px;
   height: 68px;
-  position: relative;
   font-size: 20px;
   font-weight: 500; /* Ajusta el peso para el botón */
 }
 
-.imgH {
-  height: auto;
-  max-width: 100%;
-  position: relative;
+.carousel{
 }
 
-.hidden-text {
-  display: none;
+.imgH {
+  height: 25rem;
 }
+
 
 @media (max-width: 768px) {
-  .frame {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .header {
-    padding: 20px 0;
-  }
-
-  .p {
-    font-size: 18px;
-    max-width: 100%;
-  }
-
-  .button-instance {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    font-size: 18px;
-  }
-
-  .imgH {
-    width: 100%;
-    height: auto;
-  }
+  
 }
 
 @media (max-width: 530px) {
-  .header {
-    display: none;
-  }
-
-  .hidden-text {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-  }
-
-  .text-wrapper {
-    font-size: 10vw;
-  }
+ 
 }
 </style>
