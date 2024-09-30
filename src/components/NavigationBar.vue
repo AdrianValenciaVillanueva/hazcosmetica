@@ -52,7 +52,7 @@ export default {
 .logo {
   display: flex;
   align-items: center;
-  gap: 1vw;
+  justify-content: space-around;
 }
 
 .navigation-bar .image {
@@ -101,14 +101,15 @@ export default {
   background: #D9B504;
   padding-left: 22px;
   padding-right: 22px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
 }
 #contacto:hover, #contacto:focus {
   background-color:#A3A646;
   color: #1e1e1e;
+  transform: scale(1.05);
 }
 
 #carrito { 
@@ -134,27 +135,61 @@ export default {
 
 /* Media queries para ajustar el tamaño de la fuente y otros estilos en diferentes tamaños de pantalla */
 @media (max-width: 1200px) {
+ 
+  *{
+    box-sizing: border-box;
+  }
+  .navigation-bar{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 0;
+    width: 100%;
+  }
+  
   
   .navigation-bar .text-wrapper {
     font-size: 2vw;
+    margin: 0;
   }
 
+  .logo{
+    display: flex;
+    align-items: center;
+    padding-left:1em;
+  }
   .navigation-bar .image {
-    height: 6vw;
+    height: 4vw;
   }
 
   .navigation-bar .frame {
-    gap: 3vw;
+    gap: 1vw;
+    justify-content: space-between;
+    padding-right: 1em;
   }
-  
+
 }
 
 @media (max-width: 768px) {
   .navigation-bar{
-    gap: 8vw;
+    padding-top: 10px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
   }
+ 
   .navigation-bar .text-wrapper {
     font-size: 2.4vw;
+  }
+
+  .logo img{
+      max-height: 35px;
+  }
+
+  .navigation-bar .logo p {
+  font-family: 'Jomolhari', serif;
+  font-size: 1em;
+  
   }
 
   .navigation-bar .image {
@@ -162,20 +197,24 @@ export default {
   }
 
   .navigation-bar .frame {
-    gap: 1.5vw;;
+    display: flex;
+    justify-content: space-around;
   }
   #contacto {
-    margin-top: .35vw;
-    padding-left: 1.4vw;
-    padding-right: 1.4vw;
-    padding-top: .8vw;
-    padding-bottom: .8vw;
+    padding: .5em;
+    font-size: 1.8vw;
+    min-height: 35px;
+    
+  }
+  #carrito {
+    padding: .6em;
+    min-height: 37px;
   }
 }
 
 @media (max-width: 530px) {
   .navigation-bar{
-    gap: 0;
+    background-color: violet;
   }
   .navigation-bar .text-wrapper {
     font-size: 3.5vw;
