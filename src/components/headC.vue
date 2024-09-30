@@ -43,17 +43,15 @@ export default {
 .header {
   align-items: center;
   display: flex;
-  position: relative;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 0rem;
-  padding-left: 6rem;
+  padding: 0 6rem;
 }
 
 .main-text {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 2em;
   width: 50%;
   height: auto;
 }
@@ -62,10 +60,10 @@ export default {
   color: rgb(0, 0, 0);
   text-align: left; /* Alineación a la izquierda */
   font-family: 'Inter', sans-serif; /* Aplicando la fuente Inter */
-  font-size: 3rem;
+  font-size: 3.8vw;
   font-weight: 700; /* Manteniendo el texto en negritas */
   margin: 0; /* Remover márgenes adicionales */
-  padding-top: 3.5rem;
+  
 }
 
 .button-instance {
@@ -73,18 +71,55 @@ export default {
   font-family: 'Inter', sans-serif;
   border: none;
   border-radius: 14px;
-  width: 236px;
-  height: 68px;
-  font-size: 20px;
-  font-weight: 500; /* Ajusta el peso para el botón */
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  width: 50%;
 }
 
 
 .imgH {
-  height: 25rem;
+  height: 40vw;
 }
 
 
+@media (max-width: 768px) {
+  
+  * {
+    box-sizing: border-box;
+  }
+  .frame {
+    flex-direction: column;
+    padding:0;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: start;
+    padding: 0;
+    margin-top: 2em;
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+  .main-text {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-text p {
+    font-size: 2rem;
+    padding-top: 0;
+  }
+  
+  .imgH {
+    height: 36vw;
+  }
+}
 
-
+@media (max-width: 540px) {
+ .header{
+  background-color: blue;
+ }
+}
 </style>
