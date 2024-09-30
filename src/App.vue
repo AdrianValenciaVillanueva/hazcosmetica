@@ -1,11 +1,13 @@
 <template>
   <NavigationBar />
   <headC />
+  <servicios />
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue';
 import headC from './components/headC.vue';
+import servicios from './components/servicios.vue';
 
 
 export default {
@@ -13,6 +15,7 @@ export default {
   components: {
     NavigationBar,
     headC,
+    servicios,
   }
 }
 </script>

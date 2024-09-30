@@ -79,19 +79,12 @@ export default {
   font-weight: 500; /* Ajusta el peso para el botón */
 }
 
-.carousel{
-}
 
 .imgH {
   height: 25rem;
 }
 
 
-@media (max-width: 768px) {
-  
-}
 
-@media (max-width: 530px) {
- 
-}
+
 </style>
