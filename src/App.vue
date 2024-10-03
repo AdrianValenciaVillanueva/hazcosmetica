@@ -3,6 +3,8 @@
   <headC />
   <AboutUs />
   <servicios />
+  <contacto />
+
 </template>
 
 <script>
@@ -10,6 +12,7 @@ import AboutUs from './components/AboutUs.vue';
 import NavigationBar from './components/NavigationBar.vue';
 import headC from './components/headC.vue';
 import servicios from './components/servicios.vue';
+import contacto from './components/contacto.vue';
 
 export default {
   name: 'App',
@@ -17,7 +20,8 @@ export default {
     NavigationBar,
     headC,
     AboutUs,
-    servicios
+    servicios,
+    contacto
   }
 }
 </script>
