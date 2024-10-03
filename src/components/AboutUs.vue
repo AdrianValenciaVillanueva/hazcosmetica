@@ -58,6 +58,17 @@ export default {
     font-weight: 700;
     margin-bottom: 20px; /* Espacio debajo del título */
 }
+
+.titulo::after {
+    content: '';
+    width: 600px;
+    height: 50px;
+    background-image: url('@/assets/Vector1.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    display: block;
+    margin: -1rem auto 0 auto;
+  }
 .p1 {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
