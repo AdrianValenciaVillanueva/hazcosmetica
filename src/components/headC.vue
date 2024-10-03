@@ -1,24 +1,21 @@
 <template>
   <div class="frame">
+
     <header class="header">
-      <div class="div">
-        <p class="p">
+
+      <div class="main-text">
+        <p>
           Producción de artículos de belleza personalizados bajo tu propia marca.
         </p>
         <button class="button-instance">Nuestro catálogo</button>
       </div>
-      <div>
-        <img class="imgH" src="../assets/logo.png" alt="" />
+
+      <div class="carousel">
+        <img class="imgH" src="../assets/image 4.png" alt="" />
       </div>
+
     </header>
 
-    <div class="hidden-text">
-      <img class="imgH" src="../assets/logo.png" alt="" />
-      <p class="p">
-        Producción de artículos de belleza personalizados bajo tu propia marca.
-      </p>
-      <button class="button-instance">Nuestro catálogo</button>
-    </div>
   </div>
 </template>
 
@@ -35,46 +32,38 @@ export default {
 
 .frame {
   align-items: center;
+  justify-content: space-around;
   display: flex;
   flex-direction: row;
-  gap: 60px;
-  position: relative;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
   padding: 2vw 5vw;
 }
 
 .header {
-  align-items: flex-start;
-  background-color: transparent;
+  align-items: center;
   display: flex;
-  flex: 1;
-  padding: 50px 0;
-  position: relative;
   width: 100%;
   box-sizing: border-box;
+  padding: 0 6rem;
 }
 
-.div {
-  align-items: flex-start;
+.main-text {
   display: flex;
   flex-direction: column;
-  gap: 35px;
-  position: relative;
-  flex: 1;
+  gap: 2em;
+  width: 50%;
+  height: auto;
 }
 
-.p {
+.main-text p {
   color: rgb(0, 0, 0);
   text-align: left; /* Alineación a la izquierda */
   font-family: 'Inter', sans-serif; /* Aplicando la fuente Inter */
-  font-size: 30px;
+  font-size: 3.8vw;
   font-weight: 700; /* Manteniendo el texto en negritas */
-  letter-spacing: 0;
-  line-height: 28px;
-  position: relative;
-  max-width: 500px; /* Limitar el ancho del texto */
   margin: 0; /* Remover márgenes adicionales */
+  
 }
 
 .button-instance {
@@ -82,64 +71,55 @@ export default {
   font-family: 'Inter', sans-serif;
   border: none;
   border-radius: 14px;
-  width: 236px;
-  height: 68px;
-  position: relative;
-  font-size: 20px;
-  font-weight: 500; /* Ajusta el peso para el botón */
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  width: 50%;
 }
+
 
 .imgH {
-  height: auto;
-  max-width: 100%;
-  position: relative;
+  height: 40vw;
 }
 
-.hidden-text {
-  display: none;
-}
 
 @media (max-width: 768px) {
+  
+  * {
+    box-sizing: border-box;
+  }
   .frame {
     flex-direction: column;
-    gap: 30px;
+    padding:0;
   }
-
   .header {
-    padding: 20px 0;
-  }
-
-  .p {
-    font-size: 18px;
-    max-width: 100%;
-  }
-
-  .button-instance {
     width: 100%;
-    height: auto;
-    padding: 10px;
-    font-size: 18px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: start;
+    padding: 0;
+    margin-top: 2em;
+    margin-left: .5em;
+    margin-right: .5em;
   }
-
+  .main-text {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-text p {
+    font-size: 2rem;
+    padding-top: 0;
+  }
+  
   .imgH {
-    width: 100%;
-    height: auto;
+    height: 36vw;
   }
 }
 
-@media (max-width: 530px) {
-  .header {
-    display: none;
-  }
-
-  .hidden-text {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-  }
-
-  .text-wrapper {
-    font-size: 10vw;
-  }
+@media (max-width: 540px) {
+ .header{
+  background-color: blue;
+ }
 }
 </style>
