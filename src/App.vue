@@ -1,18 +1,20 @@
 <template>
   <NavigationBar />
   <headC />
+  <AboutUs />
 </template>
 
 <script>
+import AboutUs from './components/AboutUs.vue';
 import NavigationBar from './components/NavigationBar.vue';
 import headC from './components/headC.vue';
-
 
 export default {
   name: 'App',
   components: {
     NavigationBar,
     headC,
+    AboutUs
   }
 }
 </script>
