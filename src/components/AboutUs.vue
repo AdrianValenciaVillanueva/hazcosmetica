@@ -32,23 +32,24 @@ export default {
 
 <style scoped>
 .principal {    
-    display: flex; /* Usamos flexbox para alinear la imagen y el contenido en una fila */
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    gap: 20px; /* Añadimos un espacio entre la imagen y el contenido */
+    gap: 20px; 
 }
 .imagen {
-    flex: 1; /* La imagen ocupará el 50% del ancho de la caja principal */
+    flex: 1; 
 }
 
 .imagen img {
-    max-width: 100%; /* La imagen no saldrá de su contenedor */
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 .contenido {
-    flex: 1; /* El contenido ocupará el otro 50% del ancho de la caja principal */
+    flex: 1; 
+    padding-right: 50px;
     text-align: left;
 }
 .titulo {
@@ -56,13 +57,13 @@ export default {
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 20px; /* Espacio debajo del título */
+    margin-bottom: 20px; 
 }
 .p1 {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
-    line-height: 1.5; /* Mejora la legibilidad con espacio entre líneas */
-    margin-bottom: 20px; /* Espacio debajo de cada párrafo */
+    line-height: 1.5; 
+    margin-bottom: 20px; 
 }
 .boton{
     background-color: #D9B504;
