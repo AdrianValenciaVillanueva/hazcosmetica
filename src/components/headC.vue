@@ -9,11 +9,9 @@
         </p>
         <button class="button-instance">Nuestro catálogo</button>
       </div>
-
       <div class="carousel">
         <img class="imgH" src="../assets/image 4.png" alt="" />
       </div>
-
     </header>
 
   </div>
@@ -71,10 +69,16 @@ export default {
   font-family: 'Inter', sans-serif;
   border: none;
   border-radius: 14px;
-  font-size: 1em;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 0.5em 1em;
-  width: 50%;
+  width: 60%;
+}
+
+.button-instance:hover  {
+  background-color: #A3A646;
+  color: white;
+  cursor: pointer;
 }
 
 
@@ -118,8 +122,27 @@ export default {
 }
 
 @media (max-width: 540px) {
- .header{
-  background-color: blue;
+.header{
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+}
+  .main-text{
+  gap: 1rem;
+  flex: 1;
  }
+ .main-text p {
+    font-size: 1.3rem;
+    padding-top: 0;
+  }
+  .imgH {
+    height: 10rem;
+    flex: 1;
+  }
+  .button-instance {
+    font-size: .9rem;
+    width: 80%;
+    margin-left: -.2rem;
+    margin-top: 0;
+  }
 }
 </style>

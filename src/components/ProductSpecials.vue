@@ -90,11 +90,13 @@
     .product-card {
       max-width: 45%;
     }
+    
   }
   
   @media (min-width: 1025px) {
     .product-card {
       max-width: 30%;
     }
+  
   }
   </style>

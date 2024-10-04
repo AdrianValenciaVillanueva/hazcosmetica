@@ -40,6 +40,8 @@ export default {
   padding: 2rem 5vw;
   margin-top: 2rem;
   text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-services,
@@ -85,4 +87,22 @@ export default {
   color: rgba(50, 222, 176, 0.597);
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-services,
+  .footer-contact {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-icon img {
+    padding: 0;
+  }
+  
+} 
 </style>

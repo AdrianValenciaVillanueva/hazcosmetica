@@ -13,7 +13,8 @@ export default {
     font-weight: 700; 
     position: relative;
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: -2rem;
+    margin-top: 2rem;
 }
 
 .Shop-title::after {

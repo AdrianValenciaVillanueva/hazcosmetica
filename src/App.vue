@@ -2,9 +2,9 @@
   <NavigationBar />
   <headC />
   <AboutUs />
-  <servicios />
   <Tienda />
   <ProductSpecials />
+  <servicios />
   <contacto />
   
 

@@ -2,7 +2,7 @@
     <div class="principal">
         <div class="imagen">
             <img src="../assets/image 4.png" alt="Imagen de cosmética" />
-            </div>
+        </div>
         <div class="contenido">
             <div class="texto">
                 <div class="titulo">
@@ -39,16 +39,16 @@ export default {
     gap: 20px; 
 }
 .imagen {
-    flex: 1; 
+    flex: .5; 
 }
 
 .imagen img {
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
     border-radius: 10px;
 }
 .contenido {
-    flex: 1; 
+    flex: .5; 
     padding-right: 50px;
     text-align: left;
 }
@@ -72,7 +72,7 @@ export default {
   }
 .p1 {
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 1.5vw;
     line-height: 1.5; 
     margin-bottom: 20px; 
 }
@@ -86,6 +86,102 @@ export default {
     font-weight: 500;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+   .principal {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .contenido{
+        text-align: center;
+    }
+    .imagen {
+        display: none;
+    }
+    
+    .contenido {
+        padding: 0;
+    }
+    .titulo {
+        font-size: 2.5em;
+    }
+    .p1 {
+        font-size: 1.4em;
+    }
+    .boton {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .imagen {
+        display: none;
+    }
+
+    .imagen img {
+        display: none;
+    }
+
+    .principal {
+        padding: 1.5em 0 0 0;
+        margin: 0;
+    }
+    .contenido {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .titulo {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .titulo::after {
+    content: '';
+    width: 90vw;
+    height: 50px;
+    background-image: url('@/assets/Vector1.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    display: block;
+    margin: -.7rem auto 0 auto;
+  }
+
+  .descripcion {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom:2em ;
+  }
+
+.p1 {
+    text-align: center;
+    margin: 0;
+    padding: 0 1em;
+    padding-bottom:2em ;
+    font-size: 1.2em;
+}
+
+    .boton {
+        padding: 3vw 6vw;
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+
+}
+    
+
 
 </style>
 
