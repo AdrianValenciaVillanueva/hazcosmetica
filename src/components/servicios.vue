@@ -29,7 +29,9 @@
           {
             title: 'Diseño de envases personalizado:',
             description: 'Dispones de una variedad de envases y etiquetas personalizables. Nuestro equipo colabora contigo para garantizar un diseño perfecto, con muestras para tu aprobación antes de la producción final. Tu satisfacción es nuestra prioridad.'
-          }
+          },
+          
+
         ]
       };
     }

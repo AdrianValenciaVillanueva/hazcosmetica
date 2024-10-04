@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body {
+  	margin: 0; line-height: normal;
+}
+:root {
+  	
+  	/* fonts */
+  	--font-poppins: Poppins;
+  	
+  	/* font sizes */
+  	--font-size-xl: 1.25rem;
+  	--font-size-5xl: 1.5rem;
+  	
+  	/* Colors */
+  	--negro: #25261f;
+  	--secondary: #2f2105;
+  	--verde-claro: #6f8c04;
+  	
+  	/* Paddings */
+  	--padding-3xs: 0.625rem;
+  	
+  	/* Border radiuses */
+  	--br-45xl: 64px;
+  	--br-xs: 12px;
+  	
+  	/* Effects */
+  	--shadow: 0px 6px 16px rgba(0, 0, 0, 0.16);
+}

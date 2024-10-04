@@ -3,7 +3,12 @@
   <headC />
   <AboutUs />
   <servicios />
+  <Tienda />
+  <ProductSpecials />
   <contacto />
+  
+
+  
 
 </template>
 
@@ -13,6 +18,8 @@ import NavigationBar from './components/NavigationBar.vue';
 import headC from './components/headC.vue';
 import servicios from './components/servicios.vue';
 import contacto from './components/contacto.vue';
+import Tienda from './components/Tienda.vue';
+import ProductSpecials from './components/ProductSpecials.vue';
 
 export default {
   name: 'App',
@@ -21,6 +28,8 @@ export default {
     headC,
     AboutUs,
     servicios,
+    Tienda,
+    ProductSpecials,
     contacto
   }
 }
